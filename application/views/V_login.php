@@ -51,7 +51,7 @@
                 });
                 return;
             }
-            $.ajax({
+            $.ajax({||
                 url: 'C_login/login',
                 type: 'POST',
                 data: {
