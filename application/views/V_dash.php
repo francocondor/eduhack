@@ -43,7 +43,19 @@
         <script>
             var array = [];
             function iralcurso(option){
-
+                return;
+                array.push(option);
+                if(array.length == 1){
+                    $("#question").text('¿Pregunta 2?');
+                    $("#img1").attr("src","<?php echo base_url(); ?>public/utils/img/instagram.png");
+                    $("#img2").attr("src","<?php echo base_url(); ?>public/utils/img/instagram.png");
+                } else if(array.length == 2){
+                    $("#question").text('¿Pregunta 3?');
+                    $("#img1").attr("src","<?php echo base_url(); ?>public/utils/img/youtube.png");
+                    $("#img2").attr("src","<?php echo base_url(); ?>public/utils/img/youtube.png");
+                } else if(array.length == 3){
+                    window.open("<?php echo base_url(); ?>" + "newmascota", "_self");
+                }
             }
             
         </script>
